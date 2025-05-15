@@ -7,6 +7,13 @@
 
 const { ask } = require('../helpers/input');
 
+function diffDays(actualDate, birthDate) {
+  const diff = actualDate - birthDate;
+  const edadEnDias = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+  return edadEnDias;
+}
+
 function calcularEdad(fechaNacimiento){
     
     
@@ -15,10 +22,6 @@ function calcularEdad(fechaNacimiento){
 
 
 async function main() {
-
- const fechaNacimiento = await ask("¿Cuál es tu fecha de nacimiento? (DD/MM/AAAA)");
-
-    
 
 
 }
