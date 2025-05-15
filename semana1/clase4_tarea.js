@@ -7,7 +7,18 @@
 
 const { ask } = require('../helpers/input');
 
+function calcularEdad(fechaNacimiento){
+    
+    
+}
+
+
+
 async function main() {
+
+ const fechaNacimiento = await ask("¿Cuál es tu fecha de nacimiento? (DD/MM/AAAA)");
+
+    
 
 
 }
